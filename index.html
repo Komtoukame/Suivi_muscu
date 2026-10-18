@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Ma Muscu</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ma Muscu">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root{
+  --bg:#0B0B0C; --surf:#151516; --surf2:#1E1E20; --line:#2B2B2E;
+  --txt:#F2F0EC; --mut:#8B93A1; --acc:#FF7300; --acc-dim:#C25800;
+  --ok:#5FC98E; --rad:16px;
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+html,body{margin:0; padding:0; background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:16px; overscroll-behavior:none}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+h1,h2,h3{margin:0; text-transform:uppercase; letter-spacing:.04em}
+button{font:inherit; border:0; cursor:pointer; background:none; color:inherit}
+input,select,textarea{font:inherit; color:var(--txt); background:var(--surf2);
+  border:1px solid var(--line); border-radius:10px; padding:10px 12px; width:100%; resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc); outline-offset:1px; border-color:var(--acc)}
+input[type=number]{font-variant-numeric:tabular-nums; text-align:center; -moz-appearance:textfield}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+
+/* ---------- layout ---------- */
+.top{padding:calc(14px + env(safe-area-inset-top)) 18px 10px; text-align:center}
+.top h1{font-size:20px; font-weight:900; letter-spacing:.1em; color:var(--acc)}
+.top .flag{width:10px; height:26px; border-radius:3px; background:var(--acc)}
+.page{padding:4px 16px 24px; display:none}
+.page.on{display:block}
+.sub{color:var(--mut); font-size:13px; margin:2px 0 14px}
+
+/* ---------- cartes séances ---------- */
+.card{background:var(--surf); border:1px solid var(--line); border-radius:var(--rad);
+  padding:16px; margin-bottom:14px}
+.card .head{display:flex; justify-content:space-between; align-items:flex-start; gap:8px}
+.card h2{font-size:17px; font-weight:800}
+.days{display:flex; gap:5px; margin-top:8px; flex-wrap:wrap}
+.day{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+  padding:4px 8px; border-radius:6px; background:var(--surf2); color:var(--mut); border:1px solid var(--line)}
+.day.on{background:var(--acc); color:#0B0B0C; border-color:var(--acc)}
+.badge{display:inline-block; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.06em;
+  background:var(--acc); color:#0B0B0C; padding:3px 8px; border-radius:20px}
+.exolist{margin:12px 0 0; padding:0; list-style:none; font-size:14px; color:var(--mut)}
+.exolist li{padding:7px 0; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:8px}
+.exolist li b{color:var(--txt); font-weight:600}
+.exolist .last{font-variant-numeric:tabular-nums; white-space:nowrap}
+.btn{display:block; width:100%; text-align:center; padding:14px; border-radius:12px;
+  font-weight:800; text-transform:uppercase; letter-spacing:.05em; font-size:14px}
+.btn.acc{background:var(--acc); color:#0B0B0C}
+.btn.acc:active{background:var(--acc-dim)}
+.btn.ghost{border:1px dashed var(--line); color:var(--mut); font-weight:600; text-transform:none; letter-spacing:0}
+.btn.line{border:1px solid var(--line); color:var(--txt)}
+.btn+.btn{margin-top:10px}
+.mini{font-size:12px; color:var(--mut); padding:8px; font-weight:600}
+.icon-btn{padding:6px 10px; border-radius:8px; border:1px solid var(--line); color:var(--mut); font-size:13px}
+
+/* ---------- séance en cours ---------- */
+.wo-exo{background:var(--surf); border:1px solid var(--line); border-radius:var(--rad); padding:14px 14px 10px; margin-bottom:12px}
+.wo-exo h3{font-size:15px; font-weight:800}
+.wo-exo .prev{font-size:12px; color:var(--mut); margin:3px 0 10px; font-variant-numeric:tabular-nums}
+.setrow{display:grid; grid-template-columns:30px 1fr 16px 1fr 32px 26px; gap:7px; align-items:center; margin-bottom:8px}
+.setrow .n{font-size:12px; font-weight:800; color:var(--mut); text-align:center}
+.setrow .x{color:var(--mut); text-align:center; font-size:13px}
+.setrow .kg{font-size:11px; color:var(--mut); text-align:center}
+.setrow .rm{color:#E06060; font-size:16px; text-align:center; padding:6px 0}
+.addset{font-size:13px; color:var(--acc); font-weight:700; padding:6px 0 4px}
+
+/* ---------- suivi ---------- */
+.bignum{font-size:44px; font-weight:900; font-variant-numeric:tabular-nums; letter-spacing:-.02em; line-height:1}
+.bignum small{font-size:16px; font-weight:700; color:var(--mut); letter-spacing:0}
+.statrow{display:flex; gap:12px; margin:14px 0}
+.stat{flex:1; background:var(--surf); border:1px solid var(--line); border-radius:12px; padding:12px}
+.stat .l{font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--mut); font-weight:700}
+.stat .v{font-size:20px; font-weight:800; font-variant-numeric:tabular-nums; margin-top:2px}
+canvas{width:100%; height:200px; display:block}
+.histo{list-style:none; margin:14px 0 0; padding:0}
+.histo li{display:flex; justify-content:space-between; padding:11px 2px; border-top:1px solid var(--line);
+  font-size:14px; font-variant-numeric:tabular-nums}
+.histo .d{color:var(--mut)}
+.histo .score{color:var(--acc); font-weight:800; margin-left:6px}
+.histo .com{border-top:0; padding-top:0; margin-top:-6px; color:var(--mut); font-size:13px; font-style:italic}
+
+/* ---------- édition ---------- */
+.field{margin-bottom:14px}
+.field label{display:block; font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+  color:var(--mut); font-weight:700; margin-bottom:6px}
+.exoedit{margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--line)}
+.exonum{display:grid; grid-template-columns:1fr 1fr 1fr 34px; gap:8px; margin-top:8px; align-items:center}
+.exonum span i{display:block; font-style:normal; font-size:10px; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut); text-align:center; margin-top:3px; font-weight:700}
+.del{color:#E06060; font-size:18px; text-align:center}
+
+/* ---------- nav ---------- */
+nav{position:fixed; left:0; right:0; bottom:0; display:flex;
+  background:rgba(11,11,12,.96); backdrop-filter:blur(10px);
+  border-top:1px solid var(--line); padding:8px 8px calc(8px + env(safe-area-inset-bottom))}
+nav button{flex:1; padding:9px 4px; border-radius:10px; color:var(--mut);
+  font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+  display:flex; flex-direction:column; align-items:center; gap:3px}
+nav button.on{color:var(--acc)}
+nav svg{width:22px; height:22px}
+.toast{position:fixed; left:50%; bottom:96px; transform:translateX(-50%) translateY(20px);
+  background:var(--ok); color:#0E1A13; font-weight:800; padding:10px 18px; border-radius:99px;
+  opacity:0; transition:.25s; pointer-events:none; font-size:14px; white-space:nowrap}
+.toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
+.empty{text-align:center; color:var(--mut); padding:40px 20px; font-size:14px; line-height:1.5}
+@media (prefers-reduced-motion:reduce){ .toast{transition:none} }
+</style>
+</head>
+<body>
+
+<div class="top"><h1 id="topTitle">SUIVI MUSCU</h1></div>
+
+<!-- ============ PAGE PROGRAMME ============ -->
+<div class="page on" id="pg-home"></div>
+
+<!-- ============ PAGE ENTRAINEMENT ============ -->
+<div class="page" id="pg-train"></div>
+
+<!-- ============ PAGE SEANCES (historique) ============ -->
+<div class="page" id="pg-sessions"></div>
+
+<!-- ============ PAGE SUIVI ============ -->
+<div class="page" id="pg-track"></div>
+
+<!-- ============ PAGE EDITION ============ -->
+<div class="page" id="pg-edit"></div>
+
+<nav>
+  <button id="nav-home" class="on" onclick="go('home')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg>
+    Programme</button>
+  <button id="nav-sessions" onclick="go('sessions')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 3h8M9 3v3.6L4.5 14a3 3 0 002.6 4.5h9.8a3 3 0 002.6-4.5L15 6.6V3"/></svg>
+    Séances</button>
+  <button id="nav-track" onclick="go('track')">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19L9 12l4 4 7-9"/><path d="M4 21h16"/></svg>
+    Suivi</button>
+</nav>
+
+<div class="toast" id="toast">Enregistré</div>
+
+<script>
+/* ================= DONNÉES ================= */
+/* Copie exacte du fichier HTML avant toute modification (pour la sauvegarde dans le fichier) */
+const PRISTINE = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+/* Données écrites dans le fichier lui-même (entre les marqueurs) */
+const EMBED = /*@D*/null/*@D*/;
+const KEY = "mamuscu.v1";
+let mem = null; // secours si localStorage indisponible
+const uid = () => Math.random().toString(36).slice(2,9);
+const JOURS = ["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"];
+
+function load(){
+  let ls = null;
+  try{ const r = localStorage.getItem(KEY); if(r) ls = JSON.parse(r); }catch(e){}
+  /* on garde la version la plus récente entre le fichier et le navigateur */
+  if(ls && EMBED) return (ls.ts||0) >= (EMBED.ts||0) ? ls : EMBED;
+  if(ls) return ls;
+  if(EMBED) return EMBED;
+  if(mem) return mem;
+  return { ts: Date.now(), seances:[
+      {id:uid(), nom:"Séance A", jours:[0,3], exos:[]},
+      {id:uid(), nom:"Séance B", jours:[1,4], exos:[]}
+    ], logs:[] };
+}
+let dirty = false; // vrai si des modifs ne sont pas encore écrites dans le fichier
+function save(){
+  DB.ts = Date.now();
+  mem = DB; dirty = true;
+  try{ localStorage.setItem(KEY, JSON.stringify(DB)); }catch(e){}
+}
+let DB = load();
+dirty = JSON.stringify({s:DB.seances,l:DB.logs}) !== JSON.stringify({s:(EMBED||{}).seances,l:(EMBED||{}).logs});
+
+/* Télécharge une copie de ce fichier HTML avec les données écrites dedans */
+function saveFile(){
+  const MARK = "/*@" + "D*/"; // construit en 2 morceaux pour n'exister qu'aux vrais marqueurs
+  const parts = PRISTINE.split(MARK);
+  if(parts.length !== 3){ toast("Erreur de sauvegarde"); return; }
+  DB.ts = Date.now();
+  const json = JSON.stringify(DB).replace(/<\//g, "<\\/");
+  const html = parts[0] + MARK + json + MARK + parts[2];
+  const blob = new Blob([html], {type:"text/html"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "index.html";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 5000);
+  dirty = false;
+  toast("Fichier sauvegardé ✓");
+  setTimeout(render, 1700);
+}
+
+/* ================= NAVIGATION ================= */
+let cur = "home", editId = null, trainState = null, trackExo = null;
+if(DB.draft) trainState = DB.draft;
+function go(p){
+  cur = p;
+  document.querySelectorAll(".page").forEach(e=>e.classList.remove("on"));
+  document.querySelectorAll("nav button").forEach(e=>e.classList.remove("on"));
+  document.getElementById("pg-"+p).classList.add("on");
+  const nb = document.getElementById("nav-"+(p==="edit" ? "home" : p==="train" ? "sessions" : p));
+  if(nb) nb.classList.add("on");
+  render();
+  window.scrollTo(0,0);
+}
+function toast(t){
+  const e = document.getElementById("toast"); e.textContent = t;
+  e.classList.add("on"); setTimeout(()=>e.classList.remove("on"), 1600);
+}
+const esc = s => String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fdate = iso => { const d = new Date(iso+"T12:00"); return d.toLocaleDateString("fr-FR",{day:"numeric",month:"short"}); };
+const today = () => new Date().toISOString().slice(0,10);
+
+/* dernière perf d'un exo : {kg, reps, date} du meilleur set de la dernière séance */
+function lastPerf(exoId){
+  const logs = DB.logs.map((l,i)=>({l,i}))
+    .filter(x=>x.l.entries.some(e=>e.exoId===exoId && e.sets.length))
+    .sort((a,b)=> b.l.date.localeCompare(a.l.date) || b.i - a.i); /* même jour → la dernière enregistrée */
+  if(!logs.length) return null;
+  const log = logs[0].l;
+  const en = log.entries.find(e=>e.exoId===exoId);
+  const best = en.sets.reduce((m,s)=> s.kg>m.kg ? s : m, en.sets[0]);
+  return {kg:best.kg, reps:best.reps, date:log.date, sets:en.sets};
+}
+
+/* ================= PAGE SÉANCES ================= */
+function renderHome(){
+  const el = document.getElementById("pg-home");
+  let h = "";
+  if(!DB.seances.length) h += `<div class="empty">Aucune séance.<br>Crée ta première séance ci-dessous.</div>`;
+  DB.seances.forEach(s=>{
+    h += `<div class="card">
+      <div class="head"><div>
+        <h2>${esc(s.nom)}</h2>
+        <div class="days">${JOURS.map((j,i)=>`<span class="day ${s.jours.includes(i)?"on":""}">${j}</span>`).join("")}</div>
+      </div>
+      <button class="icon-btn" onclick="openEdit('${s.id}')">Modifier</button></div>`;
+    if(s.exos.length){
+      h += `<ul class="exolist">` + s.exos.map(x=>{
+        const p = lastPerf(x.id);
+        return `<li><b>${esc(x.nom)}</b><span class="last">${p ? (p.kg ? p.kg+" kg × "+p.reps : p.reps+" reps") : "—"}</span></li>`;
+      }).join("") + `</ul>`;
+    } else h += `<p class="mini">Aucun exercice — ajoute-les via « Modifier ».</p>`;
+    const resume = DB.draft && DB.draft.seanceId===s.id;
+    h += `<div style="margin-top:12px"><button class="btn acc" onclick="startTrain('${s.id}')">${resume ? "Reprendre la séance en cours" : "Démarrer"}</button></div></div>`;
+  });
+  h += `<button class="btn ghost" onclick="newSeance()">+ Nouvelle séance</button>`;
+  el.innerHTML = h;
+}
+function newSeance(){
+  const s = {id:uid(), nom:"Nouvelle séance", jours:[], exos:[]};
+  DB.seances.push(s); save(); openEdit(s.id);
+}
+
+/* ================= PAGE ÉDITION ================= */
+function openEdit(id){ editId = id; go("edit"); }
+function renderEdit(){
+  const s = DB.seances.find(x=>x.id===editId);
+  const el = document.getElementById("pg-edit");
+  if(!s){ el.innerHTML=""; return; }
+  let h = `<div class="card">
+    <div class="field"><label>Nom de la séance</label>
+      <input value="${esc(s.nom)}" onchange="ed('nom',this.value)"></div>
+    <div class="field"><label>Jours d'entraînement</label>
+      <div class="days">${JOURS.map((j,i)=>
+        `<button class="day ${s.jours.includes(i)?"on":""}" onclick="togDay(${i})">${j}</button>`).join("")}</div></div>
+    <div class="field"><label>Exercices</label>
+      ${s.exos.map((x,i)=>`<div class="exoedit">
+        <input placeholder="Ex : Développé couché" value="${esc(x.nom)}" onchange="edExo(${i},'nom',this.value)">
+        <div class="exonum">
+          <span><input type="number" inputmode="numeric" placeholder="3" value="${x.series??""}" onchange="edExo(${i},'series',this.value)"><i>séries</i></span>
+          <span><input type="number" inputmode="numeric" placeholder="10" value="${x.reps??""}" onchange="edExo(${i},'reps',this.value)"><i>reps</i></span>
+          <span><input type="number" inputmode="decimal" step="0.5" placeholder="20" value="${x.poids??""}" onchange="edExo(${i},'poids',this.value)"><i>kg</i></span>
+          <button class="del" onclick="delExo(${i})">✕</button>
+        </div></div>`).join("")}
+      <button class="addset" onclick="addExo()">+ Ajouter un exercice</button></div>
+  </div>
+  <button class="btn acc" onclick="go('home')">Terminé</button>
+  <button class="btn ghost" onclick="delSeance()">Supprimer cette séance</button>`;
+  el.innerHTML = h;
+}
+function ed(k,v){ const s=DB.seances.find(x=>x.id===editId); s[k]=v.trim()||s[k]; save(); }
+function togDay(i){ const s=DB.seances.find(x=>x.id===editId);
+  s.jours = s.jours.includes(i) ? s.jours.filter(d=>d!==i) : [...s.jours,i].sort(); save(); renderEdit(); }
+function addExo(){ const s=DB.seances.find(x=>x.id===editId);
+  s.exos.push({id:uid(), nom:"", series:null, reps:null, poids:null}); save(); renderEdit(); }
+function edExo(i,k,v){ const s=DB.seances.find(x=>x.id===editId);
+  if(k==="nom"){
+    const nom = v.trim();
+    s.exos[i].nom = nom;
+    /* même nom qu'un exo retiré (avec historique) → on récupère son suivi */
+    if(nom){
+      const norm = t => t.toLowerCase().replace(/\s+/g," ").trim();
+      const used = {}; DB.seances.forEach(sc=>sc.exos.forEach(x=>used[x.id]=1));
+      const orphan = allExos().find(x=>x.archived && !used[x.id] && norm(x.nom)===norm(nom));
+      if(orphan) s.exos[i].id = orphan.id;
+    }
+  } else {
+    s.exos[i][k] = v===""?null:parseFloat(v);
+  }
+  save(); }
+function delExo(i){ const s=DB.seances.find(x=>x.id===editId);
+  if(confirm("Supprimer cet exercice ? Son historique restera visible dans le suivi.")){ s.exos.splice(i,1); save(); renderEdit(); } }
+function delSeance(){
+  if(confirm("Supprimer toute la séance ?")){
+    DB.seances = DB.seances.filter(x=>x.id!==editId); save(); go("home"); } }
+
+/* ================= PAGE ENTRAÎNEMENT ================= */
+function startTrain(id){
+  const s = DB.seances.find(x=>x.id===id);
+  if(!s.exos.filter(x=>x.nom).length){ openEdit(id); toast("Ajoute d'abord des exercices"); return; }
+  if(DB.draft && DB.draft.seanceId===id){ trainState = DB.draft; go("train"); return; }
+  if(DB.draft && DB.draft.seanceId!==id){
+    if(!confirm("Une séance est déjà en cours. L'abandonner pour démarrer celle-ci ?")) return;
+  }
+  trainState = { seanceId:id, date:today(), comment:"",
+    entries: s.exos.filter(x=>x.nom).map(x=>{
+      const p = lastPerf(x.id);
+      const n = x.series || 3;
+      const base = p ? p.sets.map(st=>({reps:st.reps, kg:st.kg})) :
+        Array.from({length:n}, ()=>({reps:x.reps??null, kg:x.poids??null}));
+      return { exoId:x.id, sets: base };
+    })};
+  go("train");
+}
+function renderTrain(){
+  const el = document.getElementById("pg-train");
+  if(!trainState){ go("home"); return; }
+  const s = DB.seances.find(x=>x.id===trainState.seanceId);
+  let h = `<h2 style="font-size:17px;margin:6px 0 12px">${esc(s.nom)}</h2>
+  <div class="field"><label>Date</label><input type="date" value="${trainState.date}" onchange="trainState.date=this.value;saveDraft()"></div>`;
+  trainState.entries.forEach((en,ei)=>{
+    const x = s.exos.find(e=>e.id===en.exoId);
+    const p = lastPerf(en.exoId);
+    h += `<div class="wo-exo"><h3>${esc(x?x.nom:"Exercice")}</h3>
+      <div class="prev">${p ? "Dernière fois ("+fdate(p.date)+") : "+(p.kg ? p.kg+" kg × "+p.reps : p.reps+" reps") : "Première fois — lance-toi !"}</div>`;
+    en.sets.forEach((st,si)=>{
+      h += `<div class="setrow"><span class="n">S${si+1}</span>
+        <input type="number" inputmode="numeric" placeholder="reps" value="${st.reps??""}"
+          onchange="setVal(${ei},${si},'reps',this.value)">
+        <span class="x">×</span>
+        <input type="number" inputmode="decimal" placeholder="poids" step="0.5" value="${st.kg??""}"
+          onchange="setVal(${ei},${si},'kg',this.value)">
+        <span class="kg">kg</span>
+        <button class="rm" onclick="delSet(${ei},${si})">✕</button></div>`;
+    });
+    h += `<button class="addset" onclick="addSet(${ei})">+ Série</button></div>`;
+  });
+  h += `<div class="field"><label>Commentaire de séance (optionnel)</label>
+    <textarea rows="2" placeholder="Ex : bonne forme, épaule un peu sensible, tenté +2,5 kg…"
+      onchange="trainState.comment=this.value;saveDraft()">${esc(trainState.comment||"")}</textarea></div>
+  <button class="btn acc" onclick="saveTrain()">Enregistrer la séance</button>
+  <button class="btn ghost" onclick="cancelTrain()">Annuler</button>`;
+  el.innerHTML = h;
+}
+function setVal(ei,si,k,v){ let n = v===""?null:parseFloat(v);
+  if(n!=null && n<0) n = 0; /* pas de poids négatif */
+  trainState.entries[ei].sets[si][k] = n; saveDraft(); }
+function delSet(ei,si){ const sets = trainState.entries[ei].sets;
+  if(sets.length<=1) return;
+  sets.splice(si,1); saveDraft(); renderTrain(); }
+
+function saveDraft(){ DB.draft = trainState; save(); }
+function addSet(ei){ const sets = trainState.entries[ei].sets;
+  const last = sets[sets.length-1]; sets.push({reps:null, kg:last?last.kg:null}); saveDraft(); renderTrain(); }
+function cancelTrain(){ if(confirm("Abandonner cette séance ?")){ trainState=null; DB.draft=null; save(); go("home"); } }
+function saveTrain(){
+  const sn = DB.seances.find(x=>x.id===trainState.seanceId);
+  const entries = trainState.entries.map(en=>{
+    const x = sn ? sn.exos.find(e=>e.id===en.exoId) : null;
+    return { exoId:en.exoId, nom:(x?x.nom:""),
+      sets: en.sets.filter(s=>s.reps!=null).map(s=>({reps:s.reps, kg:s.kg==null?0:s.kg})) };
+  }).filter(en=>en.sets.length);
+  if(!entries.length){ toast("Remplis au moins une série"); return; }
+  DB.logs.push({ id:uid(), seanceId:trainState.seanceId, seanceNom:(sn?sn.nom:"Séance"), date:trainState.date,
+    comment:(trainState.comment||"").trim(), entries });
+  DB.draft = null; save(); trainState = null; toast("Séance enregistrée 💪"); go("sessions");
+}
+
+/* ================= PAGE SÉANCES (historique) ================= */
+function renderSessions(){
+  const el = document.getElementById("pg-sessions");
+  let h = "";
+  if(DB.draft){
+    const s = DB.seances.find(x=>x.id===DB.draft.seanceId);
+    const nExo = DB.draft.entries.length;
+    const nSet = DB.draft.entries.reduce((t,en)=>t+en.sets.filter(st=>st.reps!=null).length,0);
+    h += `<div class="card" style="border-color:var(--acc)">
+      <div class="head"><div>
+        <span class="badge">En cours</span>
+        <h2 style="margin-top:6px">${esc(s?s.nom:"Séance")}</h2>
+        <p class="mini" style="padding:2px 0 0">${fdate(DB.draft.date)} — ${nExo} exo${nExo>1?"s":""}, ${nSet} série${nSet>1?"s":""} remplie${nSet>1?"s":""}</p>
+      </div>
+      <button class="icon-btn" style="color:#E06060" onclick="abandonDraft()">Abandonner</button></div>
+      <button class="btn acc" style="margin-top:12px" onclick="continueDraft()">Continuer</button>
+    </div>`;
+  }
+  const logs = DB.logs.slice().sort((a,b)=> b.date.localeCompare(a.date) || DB.logs.indexOf(b)-DB.logs.indexOf(a));
+  if(!logs.length && !DB.draft){
+    h += `<div class="empty">Aucune séance réalisée pour l'instant.<br>Lance-toi depuis l'onglet Programme !</div>`;
+  }
+  logs.forEach(l=>{
+    h += `<div class="card">
+      <div class="head"><div>
+        <h2>${esc(l.seanceNom || (DB.seances.find(s=>s.id===l.seanceId)||{}).nom || "Séance")}</h2>
+        <p class="mini" style="padding:2px 0 0">${fdate(l.date)}</p>
+      </div>
+      <button class="icon-btn" style="color:#E06060" onclick="deleteLog('${l.id}')">Supprimer</button></div>
+      <ul class="exolist">${l.entries.map(en=>
+        `<li><b>${esc(en.nom||"Exercice")}</b><span class="last">${en.sets.map(t=>t.kg?t.reps+"\u00d7"+t.kg+"kg":t.reps).join(" | ")}</span></li>`
+      ).join("")}</ul>
+      ${l.comment ? `<p class="mini" style="padding-top:8px">💬 ${esc(l.comment)}</p>` : ""}
+    </div>`;
+  });
+  el.innerHTML = h;
+}
+function continueDraft(){ trainState = DB.draft; go("train"); }
+function abandonDraft(){
+  if(confirm("Abandonner cette séance en cours ? Ce qui a été rempli sera perdu.")){
+    DB.draft = null; save(); render();
+  }
+}
+function deleteLog(id){
+  if(confirm("Supprimer cette séance ? Les données de ses exercices disparaîtront aussi du Suivi. Action définitive.")){
+    DB.logs = DB.logs.filter(l=>l.id!==id); save(); trackExo = null; render();
+  }
+}
+
+/* ================= PAGE SUIVI ================= */
+function allExos(){
+  const seen = {}, out = [];
+  DB.seances.forEach(s=>s.exos.forEach(x=>{ if(x.nom && !seen[x.id]){ seen[x.id]=1; out.push(x); } }));
+  /* exos retirés des séances mais qui ont un historique : ils restent suivis */
+  DB.logs.forEach(l=>l.entries.forEach(en=>{
+    if(!seen[en.exoId] && en.sets.length){
+      seen[en.exoId]=1;
+      out.push({id:en.exoId, nom:(en.nom||"Exercice retiré"), archived:true});
+    } else if(seen[en.exoId]){
+      const o = out.find(x=>x.id===en.exoId);
+      if(o && o.archived && en.nom) o.nom = en.nom; /* dernier nom connu */
+    }
+  }));
+  return out;
+}
+
+function exoSeries(exoId){
+  return DB.logs.map((l,i)=>({l,i}))
+    .filter(x=>x.l.entries.some(e=>e.exoId===exoId && e.sets.length))
+    .sort((a,b)=> a.l.date.localeCompare(b.l.date) || a.i - b.i)
+    .map(({l})=>{ const en = l.entries.find(e=>e.exoId===exoId);
+      /* force = moyenne sur toutes les séries de poids × (1 + reps/30)
+         → chaque série améliorée fait monter le score */
+      const f1 = s => s.kg * (1 + s.reps/30);
+      const force = Math.round(en.sets.reduce((t,s)=>t+f1(s),0) / en.sets.length * 10)/10;
+      const best = en.sets.reduce((m,s)=> f1(s)>f1(m)?s:m, en.sets[0]);
+      return {date:l.date, kg:best.kg, reps:best.reps, force, sets:en.sets, comment:l.comment||""}; });
+}
+function renderTrack(){
+  const el = document.getElementById("pg-track");
+  const exos = allExos();
+  if(!exos.length){ el.innerHTML = `<div class="empty">Ajoute des exercices à tes séances,<br>puis reviens ici voir ta progression.</div>`; return; }
+  if(!trackExo || !exos.find(x=>x.id===trackExo)) trackExo = exos[0].id;
+  const serie = exoSeries(trackExo);
+  let h = `<div class="field"><select onchange="trackExo=this.value;render()">
+    ${exos.map(x=>`<option value="${x.id}" ${x.id===trackExo?"selected":""}>${esc(x.nom)}${x.archived?" (retiré)":""}</option>`).join("")}
+  </select></div>`;
+  if(!serie.length){
+    h += `<div class="empty">Pas encore de séance enregistrée pour cet exercice.</div>`;
+  } else {
+    /* exo au poids du corps (aucune série avec un poids) → pas de courbe, juste l'historique */
+    const hasW = serie.some(s=>s.sets.some(t=>t.kg>0));
+    if(hasW){
+      const last = serie[serie.length-1];
+      const max = serie.reduce((m,s)=>Math.max(m,s.force),0);
+      const prog = last.force - serie[0].force;
+      h += `<div class="card">
+        <div class="statrow">
+          <div class="stat"><div class="l">Record</div><div class="v">${max}</div></div>
+          <div class="stat"><div class="l">Progression</div><div class="v" style="color:${prog>=0?"var(--ok)":"#E06060"}">${prog>=0?"+":""}${Math.round(prog*10)/10}</div></div>
+          <div class="stat"><div class="l">Séances</div><div class="v">${serie.length}</div></div>
+        </div>
+        <canvas id="chart" width="640" height="400"></canvas>
+        <p class="mini" style="text-align:center;padding:4px 0 0">Courbe de force : poids et répétitions combinés</p>
+      </div>`;
+    }
+    h += `<h3 style="font-size:13px;color:var(--mut);margin:18px 2px 4px">Historique</h3>
+    <ul class="histo">${serie.slice().reverse().map(s=>
+      `<li><span class="d">${fdate(s.date)}</span><span>${s.sets.map(t=>t.kg ? t.reps+"\u00d7"+t.kg+"kg" : t.reps).join(" | ")}${hasW ? ` <b class="score">${s.force}</b>` : ""}</span></li>` +
+      (s.comment ? `<li class="com">💬 ${esc(s.comment)}</li>` : "")).join("")}
+    </ul>`;
+    el.innerHTML = h;
+    if(hasW) drawChart(serie);
+    return;
+  }
+  el.innerHTML = h;
+}
+function drawChart(serie){
+  const cv = document.getElementById("chart"); if(!cv) return;
+  const ctx = cv.getContext("2d");
+  const W = cv.width, H = cv.height, P = 46;
+  ctx.clearRect(0,0,W,H);
+  const kgs = serie.map(s=>s.force);
+  let lo = Math.min(...kgs), hi = Math.max(...kgs);
+  if(lo===hi){ lo -= 5; hi += 5; }
+  const pad = (hi-lo)*0.15; lo -= pad; hi += pad;
+  const X = i => serie.length===1 ? W/2 : P + (W-2*P) * i/(serie.length-1);
+  const Y = v => H-P - (H-2*P) * (v-lo)/(hi-lo);
+  /* grille */
+  ctx.strokeStyle = "#2B2B2E"; ctx.fillStyle = "#8B93A1";
+  ctx.font = "20px -apple-system,sans-serif"; ctx.lineWidth = 1;
+  for(let g=0; g<=3; g++){
+    const v = lo + (hi-lo)*g/3, y = Y(v);
+    ctx.beginPath(); ctx.moveTo(P,y); ctx.lineTo(W-P/2,y); ctx.stroke();
+    ctx.fillText(Math.round(v), 4, y+6);
+  }
+  /* zone dégradée */
+  const grad = ctx.createLinearGradient(0,P,0,H-P);
+  grad.addColorStop(0,"rgba(255,115,0,.30)"); grad.addColorStop(1,"rgba(255,115,0,0)");
+  ctx.beginPath(); ctx.moveTo(X(0), H-P);
+  serie.forEach((s,i)=>ctx.lineTo(X(i), Y(s.force)));
+  ctx.lineTo(X(serie.length-1), H-P); ctx.closePath();
+  ctx.fillStyle = grad; ctx.fill();
+  /* ligne */
+  ctx.beginPath(); ctx.strokeStyle = "#FF7300"; ctx.lineWidth = 4; ctx.lineJoin="round";
+  serie.forEach((s,i)=> i ? ctx.lineTo(X(i),Y(s.force)) : ctx.moveTo(X(i),Y(s.force)));
+  ctx.stroke();
+  /* points */
+  serie.forEach((s,i)=>{ ctx.beginPath(); ctx.arc(X(i),Y(s.force),6,0,7);
+    ctx.fillStyle = "#0B0B0C"; ctx.fill();
+    ctx.lineWidth = 3; ctx.strokeStyle = "#FF7300"; ctx.stroke(); });
+  /* dates premières/dernières */
+  ctx.fillStyle = "#8B93A1";
+  ctx.fillText(fdate(serie[0].date), P-10, H-12);
+  const t = fdate(serie[serie.length-1].date);
+  ctx.fillText(t, W-P-ctx.measureText(t).width+16, H-12);
+}
+
+/* ================= RENDER ================= */
+function render(){
+  try{
+    if(cur==="home") renderHome();
+    if(cur==="edit") renderEdit();
+    if(cur==="train") renderTrain();
+    if(cur==="sessions") renderSessions();
+    if(cur==="track") renderTrack();
+  }catch(err){
+    console.error(err);
+    const el = document.getElementById("pg-"+cur);
+    if(el) el.innerHTML = `<div class="empty">
+      Un souci est survenu en affichant cette page.<br>Tes données ne sont pas perdues.<br><br>
+      <button class="btn line" onclick="repairData()">Réparer automatiquement</button><br><br>
+      <button class="btn ghost" onclick="showRaw()">Voir mes données</button></div>`;
+  }
+}
+/* Corrige les champs manquants ou corrompus sans effacer les données valides */
+function repairData(){
+  try{
+    DB.seances = Array.isArray(DB.seances) ? DB.seances : [];
+    DB.seances.forEach(s=>{
+      if(!s.id) s.id = uid();
+      if(typeof s.nom !== "string") s.nom = "Séance";
+      if(!Array.isArray(s.jours)) s.jours = [];
+      if(!Array.isArray(s.exos)) s.exos = [];
+      s.exos = s.exos.filter(x=>x && typeof x==="object").map(x=>({
+        id:x.id||uid(), nom:typeof x.nom==="string"?x.nom:"",
+        series:Number.isFinite(x.series)?x.series:null,
+        reps:Number.isFinite(x.reps)?x.reps:null,
+        poids:Number.isFinite(x.poids)?x.poids:null }));
+    });
+    DB.logs = Array.isArray(DB.logs) ? DB.logs : [];
+    DB.logs = DB.logs.filter(l=>l && typeof l==="object").map(l=>({
+      id:l.id||uid(), seanceId:l.seanceId||"", seanceNom:typeof l.seanceNom==="string"?l.seanceNom:"Séance",
+      date:typeof l.date==="string"?l.date:today(), comment:typeof l.comment==="string"?l.comment:"",
+      entries:(Array.isArray(l.entries)?l.entries:[]).filter(en=>en && typeof en==="object").map(en=>({
+        exoId:en.exoId||uid(), nom:typeof en.nom==="string"?en.nom:"",
+        sets:(Array.isArray(en.sets)?en.sets:[]).filter(st=>st && typeof st==="object" && Number.isFinite(st.reps))
+          .map(st=>({reps:st.reps, kg:Number.isFinite(st.kg)?Math.max(0,st.kg):0})) }))
+    })).filter(l=>l.entries.some(en=>en.sets.length));
+    if(DB.draft && (!Array.isArray(DB.draft.entries) || !DB.draft.seanceId)) DB.draft = null;
+    save(); toast("Données réparées ✓"); go(cur);
+  }catch(err){
+    console.error(err);
+    toast("La réparation a échoué — essaie « Voir mes données »");
+  }
+}
+/* Affiche les données brutes pour diagnostic (rien n'est modifié) */
+function showRaw(){
+  const el = document.getElementById("pg-"+cur);
+  let json = "(impossible de lire les données)";
+  try{ json = JSON.stringify(DB, null, 2); }catch(e){}
+  el.innerHTML = `<p class="mini">Données brutes — utile si tu dois me les envoyer :</p>
+    <pre style="white-space:pre-wrap; word-break:break-all; font-size:11px; background:var(--surf2);
+      border:1px solid var(--line); border-radius:10px; padding:10px; max-height:60vh; overflow:auto">${esc(json)}</pre>
+    <button class="btn line" style="margin-top:12px" onclick="render()">Retour</button>`;
+}
+render();
+</script>
+</body>
+</html>
